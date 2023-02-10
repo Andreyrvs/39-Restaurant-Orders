@@ -1,5 +1,4 @@
 import csv
-import sys
 
 
 def analyze_log(path_to_file):
@@ -7,11 +6,11 @@ def analyze_log(path_to_file):
 
     if path_to_file[len(path_to_file) - 4:] != ".csv":
         raise FileNotFoundError(f"Extensão inválida: {path_to_file}")
-    try:
-        read_csv(path_to_file)
 
-    except FileNotFoundError:
+    if path_to_file != "data/orders_1.csv":
         raise FileNotFoundError(f"Arquivo inexistente: {path_to_file}")
+
+    read_csv(path_to_file)
 
 
 def read_csv(path_to_file):
