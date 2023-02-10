@@ -1,55 +1,56 @@
-{'maria': 'joao', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'pizza', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'coxinha', 'terça-feira': 'segunda-feira'}
-{'maria': 'arnaldo', 'hamburguer': 'misto-quente', 'terça-feira': 'terça-feira'}
-{'maria': 'jose', 'hamburguer': 'hamburguer', 'terça-feira': 'sabado'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'joao', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'pizza', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'coxinha', 'terça-feira': 'segunda-feira'}
-{'maria': 'arnaldo', 'hamburguer': 'misto-quente', 'terça-feira': 'terça-feira'}
-{'maria': 'jose', 'hamburguer': 'hamburguer', 'terça-feira': 'sabado'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'joao', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'pizza', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'coxinha', 'terça-feira': 'segunda-feira'}
-{'maria': 'arnaldo', 'hamburguer': 'misto-quente', 'terça-feira': 'terça-feira'}
-{'maria': 'jose', 'hamburguer': 'hamburguer', 'terça-feira': 'sabado'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'joao', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'pizza', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'coxinha', 'terça-feira': 'segunda-feira'}
-{'maria': 'arnaldo', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'jose', 'hamburguer': 'hamburguer', 'terça-feira': 'sabado'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'joao', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'pizza', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'coxinha', 'terça-feira': 'segunda-feira'}
-{'maria': 'arnaldo', 'hamburguer': 'misto-quente', 'terça-feira': 'terça-feira'}
-{'maria': 'jose', 'hamburguer': 'hamburguer', 'terça-feira': 'sabado'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'joao', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'pizza', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'coxinha', 'terça-feira': 'segunda-feira'}
-{'maria': 'arnaldo', 'hamburguer': 'misto-quente', 'terça-feira': 'terça-feira'}
-{'maria': 'jose', 'hamburguer': 'hamburguer', 'terça-feira': 'sabado'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'joao', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'pizza', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'coxinha', 'terça-feira': 'segunda-feira'}
-{'maria': 'arnaldo', 'hamburguer': 'misto-quente', 'terça-feira': 'terça-feira'}
-{'maria': 'jose', 'hamburguer': 'hamburguer', 'terça-feira': 'sabado'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'joao', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'pizza', 'terça-feira': 'terça-feira'}
-{'maria': 'maria', 'hamburguer': 'coxinha', 'terça-feira': 'segunda-feira'}
-{'maria': 'arnaldo', 'hamburguer': 'misto-quente', 'terça-feira': 'terça-feira'}
-{'maria': 'jose', 'hamburguer': 'hamburguer', 'terça-feira': 'sabado'}
-{'maria': 'maria', 'hamburguer': 'hamburguer', 'terça-feira': 'terça-feira'}
+('maria', 'hamburguer', 'terça-feira')
+('joao', 'hamburguer', 'terça-feira')
+('maria', 'pizza', 'terça-feira')
+('maria', 'coxinha', 'segunda-feira')
+('arnaldo', 'misto-quente', 'terça-feira')
+('jose', 'hamburguer', 'sabado')
+('maria', 'hamburguer', 'terça-feira')
+('maria', 'hamburguer', 'terça-feira')
+('joao', 'hamburguer', 'terça-feira')
+('maria', 'pizza', 'terça-feira')
+('maria', 'coxinha', 'segunda-feira')
+('arnaldo', 'misto-quente', 'terça-feira')
+('jose', 'hamburguer', 'sabado')
+('maria', 'hamburguer', 'terça-feira')
+('maria', 'hamburguer', 'terça-feira')
+('joao', 'hamburguer', 'terça-feira')
+('maria', 'pizza', 'terça-feira')
+('maria', 'coxinha', 'segunda-feira')
+('arnaldo', 'misto-quente', 'terça-feira')
+('jose', 'hamburguer', 'sabado')
+('maria', 'hamburguer', 'terça-feira')
+('maria', 'hamburguer', 'terça-feira')
+('joao', 'hamburguer', 'terça-feira')
+('maria', 'pizza', 'terça-feira')
+('maria', 'coxinha', 'segunda-feira')
+('arnaldo', 'hamburguer', 'terça-feira')
+('jose', 'hamburguer', 'sabado')
+('maria', 'hamburguer', 'terça-feira')
+('maria', 'hamburguer', 'terça-feira')
+('joao', 'hamburguer', 'terça-feira')
+('maria', 'pizza', 'terça-feira')
+('maria', 'coxinha', 'segunda-feira')
+('arnaldo', 'misto-quente', 'terça-feira')
+('jose', 'hamburguer', 'sabado')
+('maria', 'hamburguer', 'terça-feira')
+('maria', 'hamburguer', 'terça-feira')
+('joao', 'hamburguer', 'terça-feira')
+('maria', 'pizza', 'terça-feira')
+('maria', 'coxinha', 'segunda-feira')
+('arnaldo', 'misto-quente', 'terça-feira')
+('jose', 'hamburguer', 'sabado')
+('maria', 'hamburguer', 'terça-feira')
+('maria', 'hamburguer', 'terça-feira')
+('joao', 'hamburguer', 'terça-feira')
+('maria', 'pizza', 'terça-feira')
+('maria', 'coxinha', 'segunda-feira')
+('arnaldo', 'misto-quente', 'terça-feira')
+('jose', 'hamburguer', 'sabado')
+('maria', 'hamburguer', 'terça-feira')
+('maria', 'hamburguer', 'terça-feira')
+('joao', 'hamburguer', 'terça-feira')
+('maria', 'pizza', 'terça-feira')
+('maria', 'coxinha', 'segunda-feira')
+('arnaldo', 'misto-quente', 'terça-feira')
+('jose', 'hamburguer', 'sabado')
+('maria', 'hamburguer', 'terça-feira')

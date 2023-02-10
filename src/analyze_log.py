@@ -16,8 +16,8 @@ def analyze_log(path_to_file):
 def read_csv(path_to_file):
 
     with open(path_to_file, encoding="utf-8") as file:
-        csv_data = csv.DictReader(file, delimiter=",", quotechar='"')
-        csv_list = list(csv_data)
+        csv_data = csv.reader(file, delimiter=",", quotechar='"')
+        csv_list = list(tuple(line) for line in csv_data)
         return write_txt(csv_list)
 
 
