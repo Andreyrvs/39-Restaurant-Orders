@@ -64,18 +64,18 @@ def counter_order(readed_file, name, order):
 
 
 def john_never_asked(readed_file, name):
-    pratos_todos = set()
-    pratos_joao = set()
+    all_dishes = set()
+    john_dishes = set()
 
-    for pedido in readed_file:
-        prato = pedido['order']
-        pratos_todos.add(prato)
+    for order in readed_file:
+        dishe = order['order']
+        all_dishes.add(dishe)
 
-        if pedido['client'] == name:
-            pratos_joao.add(prato)
+        if order['client'] == name:
+            john_dishes.add(dishe)
 
-    pratos_nao_pedidos = pratos_todos - pratos_joao
-    return pratos_nao_pedidos
+    dishes_not_ordered = all_dishes - john_dishes
+    return dishes_not_ordered
 
 
 def john_has_never_been(readed_file, name):
