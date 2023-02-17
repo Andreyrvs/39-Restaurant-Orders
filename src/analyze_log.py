@@ -10,9 +10,11 @@ def analyze_log(path_to_file):
     if path_to_file != "data/orders_1.csv":
         raise FileNotFoundError(f"Arquivo inexistente: {path_to_file}")
 
-    # joao_days = days_never_gone(read_csv(path_to_file), 'joao')
-    read_csv(path_to_file)
-
+    readed_file = read_csv(path_to_file)
+    john_asked = john_never_asked(readed_file, 'joao')
+    john_has_never = john_has_never_been(readed_file, 'joao')
+    write_this_list = [john_asked, john_has_never]
+    write_txt(write_this_list)
 
 def read_csv(path_to_file):
 
@@ -23,21 +25,34 @@ def read_csv(path_to_file):
         
 
 
-def write_txt(param):
+def write_txt(list_test):
 
     with open("data/mkt_campaign.txt", "w") as file:
-        for line in param:
-            file.write(str(line) + "\n")
+        for line in list_test:
+            print('line: ', line)
+            file.write(
+                f"{line}\n"
+            )
 
 
 def john_never_asked(list_of_orders, name):
     all_dishes = set()
-    joao_order = set()
+    john_request = set()
     for all_orders in list_of_orders:
         all_dishes.add(all_orders['pedido'])
-        # print(all_orders['pedido'])
-        # print(all_dishes)
         if all_orders['cliente'] == name:
-            joao_order.add(all_orders['pedido'])
-    order_never_made = all_dishes.difference(joao_order)
-    return order_never_made
+            john_request.add(all_orders['pedido'])
+    never_asked = all_dishes.difference(john_request)
+    return never_asked
+
+
+def john_has_never_been(list_of_orders, name):
+    snack_bar_open = set()
+    john_goes_that_day = set()
+
+    for all_orders in list_of_orders:
+        snack_bar_open.add(all_orders['dia'])
+        if all_orders['cliente'] == name:
+            john_goes_that_day.add(all_orders['dia'])
+    did_not_enter = snack_bar_open.difference(john_goes_that_day)
+    return did_not_enter
