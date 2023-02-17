@@ -1,14 +1,11 @@
 import csv
-from collections import Counter
 
 
 def analyze_log(path_to_file):
-    print('path_to_file: ', path_to_file)
     verify_dot_csv(path_to_file)
 
-
     readed_file = read_csv(path_to_file)
-    maria = most_frequency_order(readed_file, 'maria')
+    maria = get_most_frequent_order(readed_file, 'maria')
     arnaldo = counter_order(readed_file, 'arnaldo', 'hamburguer')
     john_asked = john_never_asked(readed_file, 'joao')
     john_has_never = john_has_never_been(readed_file, 'joao')
@@ -42,13 +39,16 @@ def write_txt(list_test):
             )
 
 
-def most_frequency_order(readed_file, name):
+def get_most_frequent_order(readed_file, name):
     frequency_order = {}
 
     for order in readed_file:
         if order['client'] == name:
             order_name = order['order']
-            frequency_order[order_name] = frequency_order.get(order_name, 0) + 1
+            if order_name in frequency_order:
+                frequency_order[order_name] += 1
+            else:
+                frequency_order[order_name] = 1
 
     most_requested = max(frequency_order, key=frequency_order.get)
     return most_requested
