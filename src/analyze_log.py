@@ -66,24 +66,34 @@ def counter_order(readed_file, name, order):
 
 
 def john_never_asked(readed_file, name):
-    all_dishes = set()
-    john_request = set()
-    for all_orders in readed_file:
-        all_dishes.add(all_orders['order'])
-        if all_orders['client'] == name:
-            john_request.add(all_orders['order'])
-    never_asked = all_dishes.difference(john_request)
-    return never_asked
+    pratos_todos = set()
+    pratos_joao = set()
+
+    for pedido in readed_file:
+        prato = pedido['order']
+        pratos_todos.add(prato)
+
+        if pedido['client'] == name:
+            pratos_joao.add(prato)
+
+    pratos_nao_pedidos = pratos_todos - pratos_joao
+    return pratos_nao_pedidos
+
 
 
 def john_has_never_been(readed_file, name):
     snack_bar_open = set()
     john_goes_that_day = set()
+    did_not_enter = set()
 
     for all_orders in readed_file:
         snack_bar_open.add(all_orders['day'])
         if all_orders['client'] == name:
             john_goes_that_day.add(all_orders['day'])
-    did_not_enter = snack_bar_open.difference(john_goes_that_day)
+
+    for day in snack_bar_open:
+        if day not in john_goes_that_day:
+            did_not_enter.add(day)
+
     return did_not_enter
 
