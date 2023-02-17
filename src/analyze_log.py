@@ -51,7 +51,7 @@ def get_most_frequent_order(readed_file, name):
             else:
                 frequency_order[order_name] = 1
 
-    most_requested = max(frequency_order, key=frequency_order.get)
+    most_requested = max(frequency_order, key=lambda x: frequency_order[x])
     return most_requested
 
 
