@@ -18,9 +18,7 @@ class TrackOrders:
             if order['customer'] == customer
         ]
 
-        if not customer_orders:
-            return None
-
+        print(set(customer_orders))
         return max(set(customer_orders), key=customer_orders.count)
 
     def get_never_ordered_per_customer(self, customer):
