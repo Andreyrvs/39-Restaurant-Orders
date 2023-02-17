@@ -27,7 +27,7 @@ def verify_dot_csv(path_to_file):
 def read_csv(path_to_file):
 
     with open(path_to_file, encoding="utf-8") as file:
-        headerList = ['cliente', 'pedido', 'dia']
+        headerList = ['client', 'order', 'day']
         file_list = csv.DictReader(file, fieldnames=headerList)
         return [each_order for each_order in file_list]
 
@@ -46,8 +46,8 @@ def most_frequency_order(readed_file, name):
     frequency_order = {}
 
     for order in readed_file:
-        if order['cliente'] == name:
-            order_name = order['pedido']
+        if order['client'] == name:
+            order_name = order['order']
             frequency_order[order_name] = frequency_order.get(order_name, 0) + 1
 
     most_requested = max(frequency_order, key=frequency_order.get)
@@ -60,7 +60,7 @@ def most_frequency_order(readed_file, name):
 def counter_order(readed_file, name, order):
     counter = 0
     for orders in readed_file:
-        if orders['cliente'] == name and orders['pedido'] == order:
+        if orders['client'] == name and orders['order'] == order:
             counter += 1
     return counter
 
@@ -69,9 +69,9 @@ def john_never_asked(readed_file, name):
     all_dishes = set()
     john_request = set()
     for all_orders in readed_file:
-        all_dishes.add(all_orders['pedido'])
-        if all_orders['cliente'] == name:
-            john_request.add(all_orders['pedido'])
+        all_dishes.add(all_orders['order'])
+        if all_orders['client'] == name:
+            john_request.add(all_orders['order'])
     never_asked = all_dishes.difference(john_request)
     return never_asked
 
@@ -81,9 +81,9 @@ def john_has_never_been(readed_file, name):
     john_goes_that_day = set()
 
     for all_orders in readed_file:
-        snack_bar_open.add(all_orders['dia'])
-        if all_orders['cliente'] == name:
-            john_goes_that_day.add(all_orders['dia'])
+        snack_bar_open.add(all_orders['day'])
+        if all_orders['client'] == name:
+            john_goes_that_day.add(all_orders['day'])
     did_not_enter = snack_bar_open.difference(john_goes_that_day)
     return did_not_enter
 
