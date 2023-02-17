@@ -1,5 +1,7 @@
 import csv
 
+PATH_EXTENSION_LENGTH = 4
+
 
 def analyze_log(path_to_file):
     verify_dot_csv(path_to_file)
@@ -14,7 +16,7 @@ def analyze_log(path_to_file):
 
 
 def verify_dot_csv(path_to_file):
-    if path_to_file[len(path_to_file) - 4:] != ".csv":
+    if path_to_file[len(path_to_file) - PATH_EXTENSION_LENGTH:] != ".csv":
         raise FileNotFoundError(f"Extensão inválida: {path_to_file}")
 
     if path_to_file != "data/orders_1.csv":
@@ -33,7 +35,6 @@ def write_txt(list_test):
 
     with open("data/mkt_campaign.txt", "w") as file:
         for line in list_test:
-            print('line: ', line)
             file.write(
                 f"{line}\n"
             )
@@ -52,9 +53,6 @@ def get_most_frequent_order(readed_file, name):
 
     most_requested = max(frequency_order, key=frequency_order.get)
     return most_requested
-
-
-        
 
 
 def counter_order(readed_file, name, order):
@@ -80,7 +78,6 @@ def john_never_asked(readed_file, name):
     return pratos_nao_pedidos
 
 
-
 def john_has_never_been(readed_file, name):
     snack_bar_open = set()
     john_goes_that_day = set()
@@ -96,4 +93,3 @@ def john_has_never_been(readed_file, name):
             did_not_enter.add(day)
 
     return did_not_enter
-
