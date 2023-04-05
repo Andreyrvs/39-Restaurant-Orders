@@ -1,8 +1,8 @@
-# My Awesome Project
+# Restaurant Orders
 
 ## Contexto
 
-Este projeto trata-se de um conversor de imagens simpes. É possivel converter imagems no fomato .webp para .png!
+Este projeto trata-se de um sistema gere relatórios com informações sobre os pedidos e as pessoas clientes que frequentam a lanchonete.
 
 ## Técnologias usadas
 
@@ -14,12 +14,16 @@ Aplicação:
 
 Adquiri essas habilidades ao desenvolver esse projeto:
 
+- Trabalhar com `Hashmap` e `Dict`;
+
+- Trabalhar com `Set`.
+
 ## Instalando Dependências
 
 - clone o projeto:
 
   ```bash
-  git clone
+  git clone git@github.com:Andreyrvs/39-Restaurant-Orders.git
   ```
 
 > Aplicação
@@ -27,7 +31,7 @@ Adquiri essas habilidades ao desenvolver esse projeto:
 1. **Entre no diretório**
 
    ```bash
-   cd
+   cd 39-Restaurant-Orders
    ```
 
 2. **Criar o ambiente virtual**
@@ -47,15 +51,6 @@ Adquiri essas habilidades ao desenvolver esse projeto:
    ```bash
    python3 -m pip install -r dev-requirements.txt
    ```
-
-## Executando aplicação
-
-- Para rodar a aplicação:
-
-  ```bash
-  cd src/
-  python3 -u
-  ```
 
 ## Executando Testes
 
